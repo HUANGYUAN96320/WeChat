@@ -76,4 +76,13 @@ $(function(){
 		});
 		
 	})
+	$(".musicBtn").click(function(){
+		var music = $("#music")[0];
+		if (music.paused) {
+			music.play();
+		}else {
+			music.pause();
+			$(this).attr("src","img/WeChat/musicBtnOff.png");
+		}
+	})
 })
